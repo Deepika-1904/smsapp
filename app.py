@@ -40,6 +40,9 @@ def delete(id:int):
     del students[id]
     return {"message":"student deleted"}
 
+@app.get("/")
+def hello():
+    return {"message":"hello"}
 
 
 
